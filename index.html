@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YuXiang's Collection</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family:Microsoft JhengHei;
+        }
+        .controlwidth {
+            margin: auto;
+            width: 1100px;
+        }
+
+        #navvv {
+            width: 100%;
+            padding-right: 20px;
+            position: fixed;
+            height: 100px;
+            line-height: 80px;
+            font-size: 20px;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .wall {
+
+            background-image: url(image/bg-2.jpg);
+            background-size: 100%;
+            height: 500px;
+        }
+
+        .introduction {
+
+            background-color: rgb(247, 247, 247);
+        }
+
+        .introduction p {
+            line-height: 20px;
+            font-size: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #photo {
+
+            height: 550px;
+            margin-top: 0px;
+            background-size: 100%;
+        }
+
+        #myPhoto {
+
+            height: 550px;
+            background-size: 100%;
+        }
+
+        #introduce {
+
+            margin-top: 180px;
+        }
+
+
+        /* 
+        .col-4 {
+
+            height: 300px;
+            border: 2px;
+            border-style: solid;
+        } */
+
+        img {
+            height: 250px;
+            background-size: 100%;
+
+        }
+
+        /* .navFixed {
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-top: 0;
+            min-width: 100%;
+            opacity: 0.94;
+            transition: opacity .5s ease-out;
+        } */
+
+
+        .opacityyy {
+            opacity: 0.2;
+        }
+
+        .hrhr {
+            /* border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        #bottomNav img {
+            height: 35px;
+            width: 35px;
+        }
+
+        h5 {
+            margin-left: 10px;
+            line-height: 35px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <ul class="nav justify-content-end" id="navvv">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="aboutme">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="collection">Collection</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="contact">Contact</a>
+            </li>
+        </ul>
+
+        <div class="wall" id="homeex">
+
+        </div>
+
+        <div class="introduction">
+
+            <div class="row justify-content-center mb-4" id="aboutmeex">
+                <h1 class="col-2  mt-5">About Me</h1>
+            </div>
+            <div class="controlwidth">
+                <div class="row justify-content-between">
+                    <div class="col-5" id="photo">
+                        <img src="image/ex.jpg" id="myPhoto" class="card-img-top">
+                    </div>
+                    <div class="col-6 " id="introduce">
+                        <p>經過Build School強力的訓練， </p>
+                        <p>學習到HTML、CSS、JavaScript和Jquery的前端開發技術，</p>
+                        <p>在當中找到了自己的熱愛的東西，</p>
+                        <p>成為了一位喜愛前端開發的人。</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center mb-4" id="collectionex">
+            <h1 class="col-2  mt-5">Collection</h1>
+        </div>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-3" id="c1">
+                        <a href="https://catcatslave.azurewebsites.net/" target=_blank>
+
+                            <img src="image/001.PNG" class="card-img-top">
+
+                        </a>
+                        <h3 id="cc1">貓奴網站切版</h3>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="card mt-3" id="c2">
+                        <a href="https://boothstap.azurewebsites.net/" target=_blank>
+                            <img src="image/002.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc2">信義房屋網站切版</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-3" id="c3">
+                        <a href="https://yuxiangex.azurewebsites.net/" target=_blank>
+                            <img src="image/003.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc3">剁手網電商網站切版</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" id="c4">
+                        <a href="https://guessguessnumber.azurewebsites.net/" target=_blank>
+                            <img src="image/004.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc4">1A2B猜數字</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-5" id="c5">
+                        <a href="https://finalcode.azurewebsites.net/" target=_blank>
+                            <img src="image/005.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc5">終極密碼</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-5" id="c6">
+                        <a href="https://horohoro.azurewebsites.net/" target=_blank>
+                            <img src="image/006.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc6">生命靈數</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" id="c7">
+                        <a href="https://calculatorrrr.azurewebsites.net/" target=_blank>
+                            <img src="image/007.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc7">計算機</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-5" id="c8">
+                        <a href="http://gmapapi-1g.azurewebsites.net/gmap/planmap.html" target=_blank>
+                            <img src="image/008.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc8">新竹景點規劃</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-5" id="c9">
+                        <a href="https://puzzleee.azurewebsites.net" target=_blank>
+                            <img src="image/013.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc9">拼圖遊戲</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" id="c10">
+                        <a href="https://cardsss.azurewebsites.net" target=_blank>
+                            <img src="image/009.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc10">翻牌記憶遊戲</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-5" id="c11">
+                        <a href="https://numbarrr.azurewebsites.net" target=_blank>
+                            <img src="image/010.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc11">抽獎機</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mt-5" id="c12">
+                        <a href="https://slottt.azurewebsites.net" target=_blank>
+                            <img src="image/011.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc12">小瑪莉遊戲</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" id="c13">
+                        <a href="https://moleee.azurewebsites.net/" target=_blank>
+                            <img src="image/012.PNG" class="card-img-top">
+                        </a>
+                        <h3 id="cc13">打地鼠遊戲</h3>
+                    </div>
+                </div>
+            </div>
+            <hr class="hrhr mt-5">
+            <div class="row justify-content-center mb-4" id="contactex">
+                <h1 class="col-2  mt-3">Contact</h1>
+            </div>
+            <div class="row justify-content-around mb-4" id="bottomNav">
+                <div class="col-3">
+                    <a href="https://github.com/ChengEx?tab=repositories" target=_blank>
+                        <img src="image/github.png" id="git">
+                    </a>
+                    <a href="https://www.facebook.com/yuxiang.chang.1" target=_blank>
+                        <img src="image/fb.png" id="fb">
+                    </a>
+                </div>
+                <div class="col-3 d-flex">
+                    <img src="image/email.PNG">
+                    <h5>frf2isgood@gmail.com</h2>
+                </div>
+                <div class="col-3 d-flex">
+                    <img src="image/phone.PNG">
+                    <h5>0937-159-881</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            for (var i = 1; i <= 13; i++) {
+                //$("#cc" + i).hide();
+                $("#c" + i).fadeOut();
+            }
+
+            $(window).scroll(function () {
+                /* 要滑動到選單的距離 */
+                /* 幫選單加上固定效果 */
+
+                if ($(this).scrollTop() > 700) {
+
+                    $("#c1").fadeIn();
+                    $("#c2").fadeIn();
+                    $("#c3").fadeIn();
+
+                } if ($(this).scrollTop() > 1050) {
+                    $("#c4").fadeIn();
+                    $("#c5").fadeIn();
+                    $("#c6").fadeIn();
+                } if ($(this).scrollTop() > 1400) {
+                    $("#c7").fadeIn();
+                    $("#c8").fadeIn();
+                    $("#c9").fadeIn();
+                } if ($(this).scrollTop() > 1750) {
+                    $("#c10").fadeIn();
+                    $("#c11").fadeIn();
+                    $("#c12").fadeIn();
+                } if ($(this).scrollTop() > 2100) {
+                    $("#c13").fadeIn();
+                }
+
+                else {
+                    $("#navvv").removeClass('navFixed'); /* 移除選單固定效果 */
+                }
+
+            });
+
+            $("#bottomNav #git").hover(
+                function () {
+                    //$("#chgicon").attr("src","images/-.png");
+                    //var now = $("#bottomNav a").attr("href");
+                    $("#bottomNav #git").attr("src", "image/githubhover.png");
+
+                }, function () {
+                    $("#bottomNav #git").attr("src", "image/github.png");
+
+                }
+            );
+            $("#bottomNav #fb").hover(
+                function () {
+                    //$("#chgicon").attr("src","images/-.png");
+                    //var now = $("#bottomNav a").attr("href");
+                    $("#bottomNav #fb").attr("src", "image/fbhover.png");
+
+                }, function () {
+                    $("#bottomNav #fb").attr("src", "image/fb.png");
+
+                }
+            );
+            $("#home").click(function () {
+                $("html,body").animate({ scrollTop: $("#homeex").offset().top-100 }, 800);
+            })
+            $("#aboutme").click(function () {
+                $("html,body").animate({ scrollTop: $("#aboutmeex").offset().top-100 }, 800);
+            })
+            $("#collection").click(function () {
+                $("html,body").animate({ scrollTop: $("#collectionex").offset().top-100 }, 800);
+            })
+            $("#contact").click(function () {
+                $("html,body").animate({ scrollTop: $("#contactex").offset().top-100 }, 800);
+            })
+
+
+            // $("#c1").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c1 a").addClass("opacityyy");
+            //         $("#cc1").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c1 a").removeClass("opacityyy");
+            //         $("#cc1").hide();
+            //     }
+            // );
+            // $("#c2").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c2 a").addClass("opacityyy");
+            //         $("#cc2").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c2 a").removeClass("opacityyy");
+            //         $("#cc2").hide();
+            //     }
+            // );
+            // $("#c3").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c3 a").addClass("opacityyy");
+            //         $("#cc3").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c3 a").removeClass("opacityyy");
+            //         $("#cc3").hide();
+            //     }
+            // );
+            // $("#c4").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c4 a").addClass("opacityyy");
+            //         $("#cc4").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c4 a").removeClass("opacityyy");
+            //         $("#cc4").hide();
+            //     }
+            // );
+            // $("#c5").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c5 a").addClass("opacityyy");
+            //         $("#cc5").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c5 a").removeClass("opacityyy");
+            //         $("#cc5").hide();
+            //     }
+            // );
+            // $("#c6").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c6 a").addClass("opacityyy");
+            //         $("#cc6").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c6 a").removeClass("opacityyy");
+            //         $("#cc6").hide();
+            //     }
+            // );
+            // $("#c7").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c7 a").addClass("opacityyy");
+            //         $("#cc7").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c7 a").removeClass("opacityyy");
+            //         $("#cc7").hide();
+            //     }
+            // );
+            // $("#c8").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c8 a").addClass("opacityyy");
+            //         $("#cc8").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c8 a").removeClass("opacityyy");
+            //         $("#cc8").hide();
+            //     }
+            // );
+            // $("#c9").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c9 a").addClass("opacityyy");
+            //         $("#cc9").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c9 a").removeClass("opacityyy");
+            //         $("#cc9").hide();
+            //     }
+            // );
+            // $("#c10").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c10 a").addClass("opacityyy");
+            //         $("#cc10").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c10 a").removeClass("opacityyy");
+            //         $("#cc10").hide();
+            //     }
+            // );
+            // $("#c11").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c11 a").addClass("opacityyy");
+            //         $("#cc11").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c11 a").removeClass("opacityyy");
+            //         $("#cc11").hide();
+            //     }
+            // );
+            // $("#c12").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c12 a").addClass("opacityyy");
+            //         $("#cc12").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c12 a").removeClass("opacityyy");
+            //         $("#cc12").hide();
+            //     }
+            // );
+            // $("#c13").hover(
+            //     function () {
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $("#c13 a").addClass("opacityyy");
+            //         $("#cc13").show();
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $("#c13 a").removeClass("opacityyy");
+            //         $("#cc13").hide();
+            //     }
+            // );
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>
