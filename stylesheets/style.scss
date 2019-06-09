@@ -1,0 +1,78 @@
+@media screen and (max-width: "1200px")
+{
+
+    .controlwidth {
+        margin: auto;
+        width: auto;
+    }
+
+    .wallword {
+       
+        left:150px;
+      
+    }
+    .wallword2 {
+       
+        left:650px;
+     
+    }
+    
+}
+
+
+@media screen and (max-width: "990px") 
+{
+
+    #photo {
+        text-align: center;
+        width:300px;
+    }
+    #introduce {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and (max-width: "900px")
+{
+    .wallword {
+       
+        left:100px;
+      
+    }
+    .wallword2 {
+       
+        left:450px;
+     
+    } 
+}
+
+@media screen and (max-width: "840px")
+{
+    .wallword {
+       
+        left:50px;
+      
+    }
+    .wallword2 {
+       
+        left:350px;
+     
+    } 
+}
+
+@media screen and (max-width: "640px")
+{
+    .wallword {
+       
+        
+        font-size:20px;
+    }
+    .wallword2 {
+       
+        left:150px;
+        font-size:20px;
+    } 
+}
