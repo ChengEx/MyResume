@@ -26,7 +26,7 @@
             height: 100px;
             line-height: 80px;
             font-size: 20px;
-           
+            margin-right: 10px;
             background-color: white;
             z-index: 10;
         }
@@ -41,8 +41,8 @@
             position: relative;
             background-image: url(image/bg-2.jpg);
             background-size: 100%;
-            height: 550px;
-            opacity: 0.8;
+            height: 650px;
+            opacity: 0.4;
         }
 
         .wallword {
@@ -81,13 +81,45 @@
             text-align: center;
         }
 
-        h3 {
+        /* h3 {
             margin-top: 10px;
             text-align: center;
-        }
+            z-index:10;
+        } */
 
         .card {
             position: relative;
+
+            /* add */
+            cursor: pointer;
+            transition: color 0.4s linear;
+        }
+
+        .card:hover {
+            color:#fff;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            height:100%;
+            background: gray; /* backgroung  */
+            /* z-index: -1; */
+            transition: transform 0.5s;
+            transform-origin: 0 0;
+            transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+
+        }
+
+        .card1::before {
+            transform: scaleY(0);
+        }
+
+        .card:hover::before {
+            transform: scaleY(1);
         }
 
         
@@ -147,7 +179,7 @@
 
 
         .card h3 {        
-           
+           font-weight: 400;
             position: absolute;            
             height: 30%;
             margin: auto;
@@ -157,6 +189,10 @@
             right: 0;
             text-align: center;
             display: none;
+        }
+
+        .card:hover h3 {
+            display: block;
         }
 
         .workname {
@@ -225,7 +261,7 @@
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-3" id="c1">
+                    <div class="card card1 mt-3" id="c1">
                         <a href="https://catcatslave.azurewebsites.net/" target=_blank>
 
                             <img src="image/mvc.PNG" class="card-img-top">
@@ -236,7 +272,7 @@
 
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-3" id="c2">
+                    <div class="card card1 mt-3" id="c2">
                         <a href="https://catcatslave.azurewebsites.net/" target=_blank>
 
                             <img src="image/001.PNG" class="card-img-top">
@@ -247,7 +283,7 @@
 
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-3" id="c3">
+                    <div class="card card1 mt-3" id="c3">
                         <a href="https://boothstap.azurewebsites.net/" target=_blank>
                             <img src="image/002.PNG" class="card-img-top">
                         </a>
@@ -255,7 +291,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c4">
+                    <div class="card card1 mt-5" id="c4">
                         <a href="https://yuxiangex.azurewebsites.net/" target=_blank>
                             <img src="image/003.PNG" class="card-img-top">
                         </a>
@@ -265,7 +301,7 @@
 
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c5">
+                    <div class="card card1 mt-5" id="c5">
                         <a href="https://guessguessnumber.azurewebsites.net/" target=_blank>
                             <img src="image/004.PNG" class="card-img-top">
                         </a>
@@ -273,7 +309,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c6">
+                    <div class="card card1 mt-5" id="c6">
                         <a href="https://finalcode.azurewebsites.net/" target=_blank>
                             <img src="image/005.PNG" class="card-img-top">
                         </a>
@@ -281,7 +317,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c7">
+                    <div class="card card1 mt-5" id="c7">
                         <a href="https://horohoro.azurewebsites.net/" target=_blank>
                             <img src="image/006.PNG" class="card-img-top">
                         </a>
@@ -290,7 +326,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c8">
+                    <div class="card card1 mt-5" id="c8">
                         <a href="https://calculatorrrr.azurewebsites.net/" target=_blank>
                             <img src="image/007.PNG" class="card-img-top">
                         </a>
@@ -298,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c9">
+                    <div class="card card1 mt-5" id="c9">
                         <a href="http://gmapapi-1g.azurewebsites.net/gmap/planmap.html" target=_blank>
                             <img src="image/008.PNG" class="card-img-top">
                         </a>
@@ -306,7 +342,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c10">
+                    <div class="card card1 mt-5" id="c10">
                         <a href="https://puzzleee.azurewebsites.net" target=_blank>
                             <img src="image/013.PNG" class="card-img-top">
                         </a>
@@ -315,7 +351,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c11">
+                    <div class="card card1 mt-5" id="c11">
                         <a href="https://cardsss.azurewebsites.net" target=_blank>
                             <img src="image/009.PNG" class="card-img-top">
                         </a>
@@ -323,7 +359,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c12">
+                    <div class="card card1 mt-5" id="c12">
                         <a href="https://numbarrr.azurewebsites.net" target=_blank>
                             <img src="image/010.PNG" class="card-img-top">
                         </a>
@@ -331,7 +367,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c13">
+                    <div class="card card1 mt-5" id="c13">
                         <a href="https://slottt.azurewebsites.net" target=_blank>
                             <img src="image/011.PNG" class="card-img-top">
                         </a>
@@ -340,7 +376,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mt-5" id="c14">
+                    <div class="card card1 mt-5" id="c14">
                         <a href="https://moleee.azurewebsites.net/" target=_blank>
                             <img src="image/012.PNG" class="card-img-top">
                         </a>
@@ -462,18 +498,18 @@
                 $("html,body").animate({ scrollTop: $("#contactex").offset().top + 1200 }, 800);
             })
 
-            $(".container .card img").hover(
-                function () {               
-                    //$(this).animate({ 'opacity': 0.2 });
-                    $(this).addClass("opacityyy");
-                    $(this).parent("a").next("h3").css("display","block").css("opacity","1");                
-                    // animate({"opacity":"1"},100);
-                }, function () {
-                    //$(this).animate({ 'opacity': 1 });
-                    $(this).removeClass("opacityyy");
-                    $(this).parent("a").next("h3").css("display","none").css("opacity","0");
-                }
-            )
+            // $(".container .card img").hover(
+            //     function () {               
+            //         //$(this).animate({ 'opacity': 0.2 });
+            //         $(this).addClass("opacityyy");
+            //         $(this).parent("a").next("h3").css("display","block").css("opacity","1");                
+            //         // animate({"opacity":"1"},100);
+            //     }, function () {
+            //         //$(this).animate({ 'opacity': 1 });
+            //         $(this).removeClass("opacityyy");
+            //         $(this).parent("a").next("h3").css("display","none").css("opacity","0");
+            //     }
+            // )
 
 
             
